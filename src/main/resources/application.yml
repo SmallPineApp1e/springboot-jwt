@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot-jwt?serverTimezone=GMT-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    hibernate:
+      # 首次执行创建表语句, 之后再执行会换成更新表语句
+      ddl-auto: update
